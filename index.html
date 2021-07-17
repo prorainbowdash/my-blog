@@ -1,24 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>about me</title>
-  <link rel="stylesheet" href="style.css">
+<style>
+body{
+	background-image: url("concrete-road.jpg");
+	background-position: center;
+    background-size: cover;
+}
+#myCanvas
+{
+	background-image: url("parkingLot.jpg");
+    margin-top: 30px;
+	border-width:10px;
+	background-color: white; 
+	border-style:ridge;
+}
+
+h1,h3,h4
+{
+	color: rgb(255, 241, 43) !important;
+}
+</style>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<title>Valet Parking </title>
 </head>
+<body onload="add();">
 
-<body>
-  <section id="me">
-      <img src="p.jpg">
-    <h1>my favorites</h1>
-      <h2>hi i am shrinidhi this is about me.HOBBIES:CODING,YOGA,DRAWING,CRAFT
-          CLASSES I GO:KARATE,YOGA,WHITE HAT JR,PRAVESHIKA,MUSIC,sloka.</h2>
-      <h3>COUSINS :ACTHU ,ANANTH,AISHU,NANDHINI,RITHVIK,VEDHIKA
-</h3>
-      <h4>FRIENDS:SHRADDHA,S.SHRINIDHI,AVANTHIKA RAJESH,AVANTHIKA SATHISH,DIVYA,ARADHANA,ANIRUDH,SAI VIHAN
-
+<center>
+<h1>Valet Parking</h1>
+<h3>Move the blue car with arrow keys</h3>
+<h4>
+	<b class="text-danger">NOTE : </b> IF CAR IS NOT VISIBLE PRESS ANY ARROW KEY
 </h4>
 
-    </section>
+	<canvas id="myCanvas" width="1000" height="800"></canvas>
+
+
+</center>
+<script src="main.js">
+</script>
 </body>
 </html>
